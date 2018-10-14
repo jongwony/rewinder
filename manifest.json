@@ -17,7 +17,15 @@
         "default_popup": "popup.html"
     },
     "content_scripts": [{
-        "matches": ["https://stackoverflow.com/*"],
+        "matches": ["*://*/*"],
+        "include_globs": [
+          "*docs*",
+          "*developer*",
+          "*stackoverflow*",
+          "*github*",
+          "*how?to*",
+          "*howto*"
+        ],
         "js": ["contentScript.js"],
         "run_at": "document_start"
     }]
