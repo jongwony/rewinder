@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rewinder</title>
+    <style>
+      body {
+        font-size: 100%;
+      }
+      #text-input {
+        font-size: 14px;
+        margin: 2px;
+        height: 23px;
+        width: 70%:
+      }
+      #search-bar {
+        margin: 8px 0 16px 0;
+      }
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="search-bar">
+      <input type="text" name="text-input" id="text-input" autofocus>
+      <div role="button" tabindex="0" id="search-button">Search</div>
+    </div>
+  </body>
+</html>
